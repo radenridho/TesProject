@@ -351,7 +351,7 @@ footer {
   
 
  /* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 600px */
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 576px) {
      .box {
        padding: 10px 10px 20px 0;
      }
@@ -360,7 +360,7 @@ footer {
        overflow: hidden;
      }
      .box h1 {
-       font-size: 35px;
+       font-size: 30px;
        display: inline;
      }
      .box h1 span {
@@ -395,8 +395,23 @@ footer {
       color: rgb(248, 249, 250);
       background-color: rgb(9, 54, 255);
     }
+    
+    #card .row {
+      border: 1px solid #3664ff;
+    }
+    .slide-content {
+      text-align: center;
+    }
     .card-content .onclick {
       text-decoration: none;
+    }
+    .card {
+      width: 330px;
+      height: auto;
+      border-radius: 25px;
+      background-color: #fff;
+      box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.2);
+      bottom: 20%;
     }
     .jobs {
       margin-top: 8%;
