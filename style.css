@@ -351,7 +351,11 @@ footer {
   
 
  /* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 600px */
- @media screen and (max-width: 576px) {
+ @media (max-width: 575.98px) {
+
+   *{
+     box-sizing: border-box;
+   }
      .box {
        padding: 10px 10px 20px 0;
      }
@@ -408,6 +412,7 @@ footer {
       background-color: #fff;
       box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.2);
       bottom: 20%;
+      display: inline-block;
     }
     .jobs {
       margin-top: 8%;
@@ -488,3 +493,20 @@ footer {
   border-radius: 20px 20px 20px 20px;
 }
 }
+@media (min-width: 576px) { 
+  .slide-content {
+    text-align: center;
+  }
+  .card-content .onclick {
+    text-decoration: none;
+  }
+  .card {
+    width: 330px;
+    height: auto;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.2);
+    bottom: 20%;
+    display: inline-block;
+  }
+ }
