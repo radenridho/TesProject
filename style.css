@@ -11,6 +11,7 @@ body {
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 /* Navbar */ 
 .nav-link {
@@ -22,7 +23,7 @@ input[type="checkbox"] {
   width: 40px;
   height: 20px;
   appearance: none;
-  background-color: #434343;
+  background-color: #000000;
   outline: none;
   border-radius: 10px;
   transition: .5s ease;
@@ -50,11 +51,27 @@ input[type="checkbox"]:checked::before {
   color: #fcfcfc;
 }
 /* Navbar */
-nav {
-  position: sticky;
-}
 .navbar {
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+    background-color: #E90006;
+    position: sticky;
+}
+.nav-link {
+  color: #ffffff;
+  font-weight: bold;
+}
+.nav-link:hover {
+  color:#000000;
+}
+.navbar-brand {
+  color: #ffffff;
+  font-weight: bold;
+}
+.navbar-brand:hover {
+  color: #000000;
+}
+.navbar-expand-lg {
+  color: #000000;
 }
 /* ---------------------------- Box ------------- */
 .box {
@@ -65,13 +82,13 @@ nav {
 }
 .box h2 {
   display: inline-block;
-  font-size: 45px;
+  font-size: 32px;
   font-weight: bold;
-  color: rgb(247, 210, 91);
+  padding: 0 10px;
 }
 .box h1 span {
-  color: rgb(85, 101, 241);
-  font-size: 45px;
+  color: #E90006;
+  font-size: 54px;
   font-weight: bold;
 }
 .box .lead {
@@ -127,7 +144,7 @@ article .button:hover {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #404041;
+  background-color: #000000;
   border-radius: 20px;
 }
 .card {
@@ -142,7 +159,7 @@ article .button:hover {
   position: relative;
   height: 200px;
   width: 250px;
-  background: #fff;
+  background: #E90006;
   padding: 4px;
 }
 .card-image .card-img {
@@ -152,9 +169,9 @@ article .button:hover {
   border: 4px solid rgba(41, 40, 40, 0.986);
 }
 .name {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color: #000000;
 }
 .description {
   font-size: 14px;
@@ -230,7 +247,7 @@ footer {
   bottom: 0;
 }
 .footer {
-  background-color: rgba(5, 50, 255, 0.733);
+  background-color: #E90006;
   box-sizing: border-box;
   width: 100%;
   text-align: left;
@@ -246,7 +263,7 @@ footer {
   width: 30%;
 }
 .footer h3 {
-  color: #fdfcfc;
+  color: #ffffff;
   margin: 0;
   padding-bottom: 20px;
   font-family: Georgia, 'Time New Roman', Times, serif;
@@ -261,7 +278,7 @@ footer {
   width: 35%;
 }
 .footer .footer-center i {
-  background-color: rgb(91, 91, 92);
+  background-color: #000000;
   color: #ffffff;
   font-size: 25px;
   width: 38px;
@@ -278,7 +295,7 @@ footer {
 }
 .footer .footer-center p {
   display: inline-block;
-  color:#fdfcfc;
+  color:#ffffff;
   vertical-align: middle;
   margin: 0;
 }
@@ -289,7 +306,7 @@ footer {
   line-height: 2;
 }
 .footer .footer-center p a {
-  color: #fdfcfc;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
 }
@@ -298,15 +315,15 @@ footer {
 }
 .footer .footer-about {
   line-height: 20px;
-  color: #fdfcfc;
+  color: #ffffff;
   font-size: 13px;
   font-weight: 900;
   margin: 0;
 }
 .footer .footer-about span {
   display: block;
-  color: #fdfcfc;
-  font-size: 18px;
+  color: #ffffff;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -318,7 +335,7 @@ footer {
   width: 50px;
   width: 50px;
   cursor: pointer;
-  background-color: #06adfa;
+  background-color: #000000;
   border-radius: 50%;
   font-size: 20px;
   color: #ffffff;
@@ -334,7 +351,7 @@ footer {
   margin-top: 3%;
   text-align: center;
   font-size: 15px;
-  color: #fdfcfc;
+  color: #ffffff;
   width: 100%;
   font-weight: 900;
 }
@@ -343,7 +360,7 @@ footer {
   text-align: center;
   font-size: 15px;
   font-weight: 900;
-  color: #fdfcfc;
+  color: #ffffff;
   width: 100%;
 }
 
@@ -352,7 +369,9 @@ footer {
 
  /* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 600px */
  @media (max-width: 575.98px) {
-
+    .navbar {
+      width: 100%
+    }
    *{
      box-sizing: border-box;
    }
@@ -368,7 +387,7 @@ footer {
        display: inline;
      }
      .box h1 span {
-      color: rgba(46, 137, 255, 0.966);
+      color: #e90006;
       font-size: 35px;
       font-weight: bold;
     }
@@ -378,9 +397,9 @@ footer {
       justify-content: left;
     }
     .box h2 {
-      color: rgba(248, 181, 55, 0.959);
-      font-size: 35px;
+      font-size: 25px;
       font-weight: bold;
+      margin-left: -7px;
     }
     article h2 {
       font-size: 35px;
@@ -453,7 +472,7 @@ footer {
     
     }
     .footer {
-      background-color: rgba(5, 50, 255, 0.733);
+      background-color: #e90006;
     }
     .footer h3 {
       color: #fdfcfc;
