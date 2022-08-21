@@ -53,15 +53,13 @@ input[type="checkbox"]:checked::before {
 /* Navbar */
 .navbar {
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
-    background-color: #E90006;
-    position: sticky;
 }
 .nav-link {
   color: #ffffff;
   font-weight: bold;
 }
 .nav-link:hover {
-  color:#000000;
+  color:#060afc;
 }
 .navbar-brand {
   color: #ffffff;
@@ -513,6 +511,9 @@ footer {
 }
 }
 @media (min-width: 576px) { 
+  .footer {
+    background-color: #e90006;
+  }
   .slide-content {
     text-align: center;
   }

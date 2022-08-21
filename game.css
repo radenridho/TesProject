@@ -11,6 +11,7 @@ body {
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 /* Navbar */ 
 .nav-link {
@@ -55,7 +56,24 @@ nav {
     z-index: 1000;
 }
 .navbar {
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+}
+.nav-link {
+color: #ffffff;
+font-weight: bold;
+}
+.nav-link:hover {
+color:#060afc;
+}
+.navbar-brand {
+color: #ffffff;
+font-weight: bold;
+}
+.navbar-brand:hover {
+color: #000000;
+}
+.navbar-expand-lg {
+color: #000000;
 }
 .nav-link {
     text-transform: uppercase;
@@ -124,7 +142,7 @@ nav {
     bottom: 0;
   }
   .footer {
-    background-color: rgba(5, 50, 255, 0.733);
+    background-color: #e90006;
     box-sizing: border-box;
     width: 100%;
     text-align: left;
@@ -140,7 +158,7 @@ nav {
     width: 30%;
   }
   .footer h3 {
-    color: #fdfcfc;
+    color: #ffffff;
     margin: 0;
     padding-bottom: 20px;
     font-family: Georgia, 'Time New Roman', Times, serif;
@@ -155,7 +173,7 @@ nav {
     width: 35%;
   }
   .footer .footer-center i {
-    background-color: rgb(91, 91, 92);
+    background-color: #000000;
     color: #ffffff;
     font-size: 25px;
     width: 38px;
@@ -172,7 +190,7 @@ nav {
   }
   .footer .footer-center p {
     display: inline-block;
-    color:#fdfcfc;
+    color:#ffffff;
     vertical-align: middle;
     margin: 0;
   }
@@ -183,7 +201,7 @@ nav {
     line-height: 2;
   }
   .footer .footer-center p a {
-    color: #fdfcfc;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     font-size: 15px;
@@ -193,14 +211,14 @@ nav {
   }
   .footer .footer-about {
     line-height: 20px;
-    color: #fdfcfc;
+    color: #ffffff;
     font-size: 12px;
     font-weight: 900;
     margin: 0;
   }
   .footer .footer-about span {
     display: block;
-    color: #fdfcfc;
+    color: #ffffff;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -213,7 +231,7 @@ nav {
     width: 50px;
     width: 50px;
     cursor: pointer;
-    background-color: #06adfa;
+    background-color: #000000;
     border-radius: 50%;
     font-size: 20px;
     color: #ffffff;
